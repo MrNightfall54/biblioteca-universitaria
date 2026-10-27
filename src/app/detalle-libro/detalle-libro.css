@@ -1,0 +1,23 @@
+.contenedor-detalle {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 18px;
+}
+
+.tarjeta-detalle {
+    width: 100%;
+    max-width: 580px;
+    padding: 22px;
+}
+
+mat-card-content {
+    padding-top: 24px;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+mat-card-actions {
+    padding: 10px 0;
+}

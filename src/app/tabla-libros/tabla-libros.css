@@ -1,0 +1,23 @@
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 850px;
+}
+
+th {
+    font-weight: 700;
+}
+
+td,
+th {
+    padding: 12px;
+}
+
+.sin-resultados {
+    padding: 20px;
+    text-align: center;
+}

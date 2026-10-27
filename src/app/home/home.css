@@ -1,0 +1,23 @@
+.contenedor-principal {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+mat-card {
+    padding: 20px;
+}
+
+mat-card-content {
+    margin-top: 24px;
+}
+
+.selector-categoria {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contador {
+    margin: 0 0 18px;
+    color: #475569;
+}
