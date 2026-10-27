@@ -1,0 +1,45 @@
+<section class="dashboard">
+  <header class="encabezado">
+    <p class="subtitulo">REPORTABILIDAD DE BIBLIOTECA</p>
+    <h1>Dashboard del catálogo</h1>
+    <p>Resumen del inventario y estado de disponibilidad de los libros de la facultad.</p>
+  </header>
+
+  <div class="indicadores">
+    <mat-card class="indicador"><mat-card-content>
+        <div class="etiqueta">Títulos registrados</div>
+        <div class="numero">{{ totalLibros }}</div>
+      </mat-card-content></mat-card>
+    <mat-card class="indicador"><mat-card-content>
+        <div class="etiqueta">Ejemplares disponibles</div>
+        <div class="numero">{{ totalEjemplares }}</div>
+      </mat-card-content></mat-card>
+    <mat-card class="indicador"><mat-card-content>
+        <div class="etiqueta">Stock crítico</div>
+        <div class="numero rojo">{{ stockCritico }}</div>
+      </mat-card-content></mat-card>
+    <mat-card class="indicador"><mat-card-content>
+        <div class="etiqueta">Stock saludable</div>
+        <div class="numero verde">{{ stockSaludable }}</div>
+      </mat-card-content></mat-card>
+  </div>
+
+  <div class="graficos">
+    <mat-card class="tarjeta-grafico">
+      <mat-card-header><mat-card-title>Inventario por categoría</mat-card-title><mat-card-subtitle>Suma de unidades
+          disponibles por área</mat-card-subtitle></mat-card-header>
+      <mat-card-content>
+        <div class="lienzo"><canvas #graficoBarras aria-label="Gráfico de barras: inventario por categoría"
+            role="img"></canvas></div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="tarjeta-grafico">
+      <mat-card-header><mat-card-title>Estado de salud del catálogo</mat-card-title><mat-card-subtitle>Libros con stock
+          menor a 10 frente a 10 o más</mat-card-subtitle></mat-card-header>
+      <mat-card-content>
+        <div class="lienzo"><canvas #graficoDona aria-label="Gráfico de dona: stock crítico y saludable"
+            role="img"></canvas></div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

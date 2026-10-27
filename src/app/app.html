@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" class="barra-superior">
+  <span class="marca">Biblioteca Universitaria</span>
+  <nav aria-label="Navegación principal" class="enlaces">
+    <a mat-button routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">Catálogo</a>
+    <a mat-button routerLink="/dashboard" routerLinkActive="activo">Dashboard</a>
+  </nav>
+</mat-toolbar>
+<main class="contenido"><router-outlet></router-outlet></main>

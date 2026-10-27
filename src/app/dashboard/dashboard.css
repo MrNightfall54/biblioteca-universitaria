@@ -1,0 +1,115 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    margin: 5px 0 8px;
+    color: #152e53
+}
+
+.encabezado p {
+    margin: 0;
+    color: #5b687b
+}
+
+.subtitulo {
+    font-size: 12px !important;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #2563eb !important
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px
+}
+
+.indicador,
+.tarjeta-grafico {
+    background: white;
+    border-radius: 14px
+}
+
+.indicador mat-card-content {
+    padding: 24px !important
+}
+
+.etiqueta {
+    font-size: 14px;
+    color: #64748b
+}
+
+.numero {
+    font-size: 36px;
+    font-weight: 750;
+    color: #1e3a5f;
+    margin-top: 10px
+}
+
+.rojo {
+    color: #dc2626
+}
+
+.verde {
+    color: #16a34a
+}
+
+.graficos {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 20px
+}
+
+.tarjeta-grafico {
+    min-width: 0
+}
+
+.tarjeta-grafico mat-card-header {
+    padding: 24px 24px 8px
+}
+
+.tarjeta-grafico mat-card-title {
+    font-size: 19px
+}
+
+.tarjeta-grafico mat-card-content {
+    padding: 15px 20px 24px
+}
+
+.lienzo {
+    position: relative;
+    width: 100%;
+    height: 340px
+}
+
+@media(max-width:850px) {
+    .indicadores {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .graficos {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:460px) {
+    .indicadores {
+        gap: 10px
+    }
+
+    .indicador mat-card-content {
+        padding: 15px !important
+    }
+
+    .numero {
+        font-size: 28px
+    }
+
+    .lienzo {
+        height: 300px
+    }
+}
